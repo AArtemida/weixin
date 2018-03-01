@@ -1,0 +1,24 @@
+<!--pages/canvas/canvas.wxml-->
+<view class="container">
+  <view class="area">
+    <canvas style="width: 400px; height: 450px;" canvas-id="one" 
+            disable-scroll="false"
+            bindtouchstart="touchStart"
+            bindtouchmove="touchMove"
+            bindtouchend="touchEnd"></canvas>
+  </view>
+
+  <view class="toolbox clearfix">
+    <view class="box pen" bindtap="penSelect" data-param="5">
+      <image src="./img/pen.png"></image>
+    </view>
+    <view class="box brush" bindtap="penSelect" data-param="15">
+      <image src="./img/brush.png"></image>
+    </view>
+    <view class="box blue" bindtap="colorSelect" data-param="#0099CB"></view>
+    <view class="box yellow" bindtap="colorSelect" data-param="#ff9900"></view>
+    <view class="box rubber" bindtap="clearCanvas">
+       <image src="./img/rubber.png"></image>
+    </view>
+  </view>
+</view>

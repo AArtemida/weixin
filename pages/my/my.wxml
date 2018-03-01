@@ -1,0 +1,40 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <view class="header">
+    <image class="headbg" src="{{src}}"></image>
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+      <block wx:else>
+        <view class="imagebox"><image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image></view>
+        <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+      </block>
+    </view>
+  </view>
+  <view class="body"> 
+    <view class="section canvas1">
+      <image src="./img/sheep.png"></image>
+      <text>One</text>
+      <navigator url="/pages/canvas/canvas" hover-class="navigator-hover"></navigator>
+    </view>
+    <view class="section canvas2">
+      <image src="./img/bull.png"></image>
+      <text>Two</text>
+    </view>
+    <view class="section canvas3" style="border-right:0;">
+      <image src="./img/dog.png"></image>
+      <text>Three</text>
+    </view>
+    <view class="section canvas4">
+      <image src="./img/chicken.png"></image>
+      <text>Four</text>
+    </view>
+    <view class="section canvas5">
+      <image src="./img/owl.png"></image>
+      <text>Five</text>
+    </view>
+    <view class="section canvas6">
+      <image src="./img/panda.png"></image>
+      <text>Six</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,84 @@
+/* pages/my/my.wxss */
+page{
+  height:100%;
+  width: 100%;
+}
+.container {
+  margin: 0;
+  padding: 20px 0;
+  background: #faf8ef;
+  color: #776e65;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  height:100%;
+}
+.header{
+  width:100%;
+  background: #fc9;
+  height:42%;
+  position: relative;
+  border-bottom:5px solid #eee; 
+}
+.userinfo{
+  padding: 20px 30px;
+  margin: 0 auto;
+  text-align: center;
+  position:relative;
+}
+button{
+  width: 120px;
+  margin-top:50px;
+}
+.imagebox{
+  border-radius:50%;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+  border:4px solid #fff;
+}
+.userinfo image{
+  border-radius:50%;
+  height: 100%;
+  width: 100%;
+}
+.userinfo-nickname{
+ color:#382B45;
+}
+.headbg{
+  width:100%;
+  position: absolute;
+  height: 100%;
+}
+.body{
+  width:100%;
+}
+.section{
+  float:left;
+  width:33%;
+  height: 150px;
+  border-right: 1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  text-align: center;
+  position: relative;
+}
+.section:last-child{
+   border-right: 0;
+}
+.section image{
+  width:50px;
+  height:50px;
+  margin-top: 40px;
+}
+.section text{
+  display: inline-block;
+  width: 100%;
+  margin-top:15px;
+}
+.section navigator{
+  display: inline-block;
+  height: 100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left: 0;
+}

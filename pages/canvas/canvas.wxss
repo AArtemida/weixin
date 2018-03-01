@@ -1,0 +1,71 @@
+/* pages/canvas/canvas.wxss */
+page{
+  height:100%;
+  width: 100%;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  background: #faf8ef;
+  color: #776e65;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  height:100%;
+}
+.clearfix{
+  zoom:1;
+}
+.clearfix:after{
+     content:".";
+     display:block;
+     height:0;
+     clear:both;
+     visibility:hidden;
+
+}
+canvas {
+	display: block;
+	margin: 10px auto;
+	background: #fff;
+	box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.1);
+	clear: both;
+	
+	/* disable selection of canvas */
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select:none;
+	-ms-user-select:none;
+	-khtml-user-select:none;
+	user-select: none;
+}
+.toolbox{
+  margin-bottom:20px;
+}
+.box{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #99CCCC;
+  margin-right: 20px;
+  float:left;
+  text-align: center;
+  vertical-align: middle;
+}
+.box:last-child{
+  margin-right: 0;
+  background:#CCCCCC;
+}
+.box:nth-child(2){
+  background: #CC0033;
+}
+.box:nth-child(3){
+  background: #0099CB;
+}
+.box:nth-child(4){
+  background: #FF9900;
+}
+.box image{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}

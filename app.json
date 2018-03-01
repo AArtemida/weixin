@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/2048/2048",
+    "pages/my/my",
+    "pages/canvas/canvas"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F7f7f7",
+    "navigationBarTitleText": "2048",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#eee"
+  },
+  "tabBar":{
+    "color":"#353535",
+        "selectedColor": "#fb9",
+        "borderStyle": "white",
+        "backgroundColor": "#F6F8F9",
+        "list": [
+          {
+            "pagePath": "pages/index/index",
+            "text": "index",
+            "iconPath": "images/star.png",
+            "selectedIconPath": "images/starse.png"
+          },
+          {
+            "pagePath": "pages/2048/2048",
+            "text": "Game",
+            "iconPath":"images/game.png",
+            "selectedIconPath":"images/gameselect.png"
+          },
+          {
+            "pagePath": "pages/my/my",
+            "text": "My",
+            "iconPath": "images/my.png",
+            "selectedIconPath": "images/myselect.png"
+          }
+        ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

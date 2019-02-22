@@ -3,7 +3,7 @@
   <view class="header">
     <image class="headbg" src="{{src}}"></image>
     <view class="userinfo">
-      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"><text>登录</text></button>
       <block wx:else>
         <view class="imagebox"><image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image></view>
         <view class="userinfo-nickname">{{userInfo.nickName}}</view>
@@ -13,12 +13,13 @@
   <view class="body"> 
     <view class="section canvas1">
       <image src="./img/sheep.png"></image>
-      <text>One</text>
+      <text>Canvas</text>
       <navigator url="/pages/canvas/canvas" hover-class="navigator-hover"></navigator>
     </view>
     <view class="section canvas2">
       <image src="./img/bull.png"></image>
-      <text>Two</text>
+      <text>Drawing</text>
+      <!-- <navigator url="/pages/drawing/drawing" hover-class="navigator-hover"></navigator> -->
     </view>
     <view class="section canvas3" style="border-right:0;">
       <image src="./img/dog.png"></image>

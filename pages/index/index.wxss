@@ -51,3 +51,10 @@ image{
 .show{
 	display: block;
 }
+.userinfo button{
+  background-color:#DEDEDE;
+  background:#E88D32;
+ color:#fff;
+ box-shadow:5px 5px 10px #ccc;
+ border:1px solid #D8710A;
+}

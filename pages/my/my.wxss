@@ -29,6 +29,18 @@ button{
   width: 120px;
   margin-top:50px;
 }
+.userinfo button{
+  border: none;
+  outline:none;
+  cursor: pointer;
+  background: none;
+  color: white;
+   background: #200122;
+  background: linear-gradient(to right, #56005b, #6f0000);
+  letter-spacing: 1px;
+  border-radius: 5px;
+  overflow: hidden;
+}
 .imagebox{
   border-radius:50%;
   height: 100px;
